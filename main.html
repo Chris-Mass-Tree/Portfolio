@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris | Neon Portfolio</title>
+    <link rel="icon" href="../images/icon.gif" type="image/gif">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo">Chris <span class="highlight">Portfolio</span></a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#experience">Experiences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content reveal fade-up">
+            <h1>Welcome to My <br><span class="highlight">Neon Portfolio</span></h1>
+            <p>
+                Hi! I'm <span class="highlight">Chris</span> — a 4th Year Computer Science student at RMMC.  
+                Passionate about programming, tech, and building digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container reveal fade-right">
+            <h2 class="section-title">Experiences</h2>
+
+            <div class="experience-content">
+
+                <div class="experience-category neon-box">
+                    <h3 class="category-name"><i class="fa-solid fa-code"></i> Programming Skills</h3>
+                    <div class="experience-badges">
+                        <span class="experience-badge">Python</span>
+                        <span class="experience-badge">MySQL</span>
+                        <span class="experience-badge">HTML</span>
+                        <span class="experience-badge">CSS</span>
+                        <span class="experience-badge">C++</span>
+                        <span class="experience-badge">Kotlin</span>
+                        <span class="experience-badge">GDScript</span>
+                    </div>
+                </div>
+
+                <div class="experience-category neon-box">
+                    <h3 class="category-name"><i class="fa-solid fa-folder-open"></i> Projects</h3>
+                    <div class="experience-badges">
+                        <span class="experience-badge">Database Banking System</span>
+                        <span class="experience-badge">Android Studio Quiz</span>
+                        <span class="experience-badge">Godot Game Development</span>
+                        <span class="experience-badge">Portfolio Website</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-section reveal fade-up">
+            <div class="contact-header">
+                <h2>Contact Me</h2>
+                <p>Feel free to message me for collaborations or inquiries!</p>
+            </div>
+
+            <div class="social-grid">
+
+                <div class="social-card neon-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>Message me through email.</p>
+                    <a href="mailto:roninbuzz@gmail.com" class="contact-button">Send Email</a>
+                </div>
+
+                <div class="social-card neon-box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Reach me on Facebook for more information.</p>
+                    <a href="https://www.facebook.com/wa.zer.180" target="_blank" class="contact-button">My Facebook</a>
+                </div>
+
+                <div class="social-card neon-box">
+                    <i class="fa-brands fa-discord"></i>
+                    <h3>Discord</h3>
+                    <p>Chat with me on Discord.</p>
+                    <a href="https://discord.com/users/760306196942684160" target="_blank" class="contact-button">Message Me</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const revealElements = document.querySelectorAll(".reveal");
+
+        function revealOnScroll() {
+            for (let el of revealElements) {
+                let rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
+
+</body>
+
+</html>
