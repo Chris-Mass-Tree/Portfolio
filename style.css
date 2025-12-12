@@ -88,7 +88,7 @@ section {
 .home p {
     font-size: 1.3rem;
     max-width: 650px;
-    margin: auto;
+    margin-top: 10px;
 }
 
 .section-title {
@@ -215,4 +215,5 @@ section {
 .fade-up.active {
     transform: translateY(0);
 }
+
 
